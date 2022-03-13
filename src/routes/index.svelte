@@ -31,7 +31,7 @@
 	export let projects;
 </script>
 
-<h1>Recent Projects</h1>
+<h1 class="text-3xl font-bold underline">Recent Projects</h1>
 
 <div>
 	{#each projects as { name, slug, description, image }}
