@@ -1,40 +1,17 @@
 <script context="module">
-	import ProjectCard from '$lib/components/project_card.svelte';
-	import { gql } from 'graphql-request';
-	import { client } from '$lib/gql-client';
-	export const load = async () => {
-		const query = gql`
-			query GetProjects {
-				projects {
-					name
-					slug
-					description
-					demo
-					sourceCode
-					image {
-						url
-					}
-				}
-			}
-		`;
-		const { projects } = await client.request(query);
-
+	export async function load() {
 		return {
-			props: {
-				projects
-			}
+			props: {}
 		};
-	};
+	}
 </script>
 
 <script>
-	export let projects;
+	import Hero from '$lib/components/hero.svelte';
 </script>
 
-<h1 class="text-3xl font-bold underline">Recent Projects</h1>
+<svelte:head>
+	<title>Phone Waiyam Hein - Home</title>
+</svelte:head>
 
-<div>
-	{#each projects as { name, slug, description, image }}
-		<ProjectCard {name} {description} url={image[0].url} {slug} />
-	{/each}
-</div>
+<Hero />
