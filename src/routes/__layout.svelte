@@ -67,7 +67,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="https://github.com/pwhb/public/blob/main/images/square.jpg?raw=true" />
+	<link rel="icon" href="https://github.com/pwhb/public/blob/main/images/broccoli.jpg?raw=true" />
 </svelte:head>
 
 <Navbar />
