@@ -12,7 +12,7 @@
 					<a href={tech.url}>
 						<img
 							src={tech.icon}
-							class="w-12 h-12 md:w-20 md:h-20 white m-3 rounded-full shadow-lg bg-gray-50 dark:bg-gray-200 dark:bg-opacity-30 p-2 hover:scale-110"
+							class="w-12 h-12 md:w-20 md:h-20 white m-3 rounded-full shadow-lg bg-gray-50 dark:bg-gray-200 dark:bg-opacity-30 p-1 md:p-2 hover:scale-110"
 							alt={tech.name}
 						/>
 						<div class="text-center">

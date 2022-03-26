@@ -1,5 +1,8 @@
 <script>
+// @ts-nocheck
+
 	import ToggleTheme from './toggle_theme.svelte';
+	import { authorStore } from '$lib/store';
 </script>
 
 <div class="navbar bg-base-100 dwshadow-xl rounded-box p-3 md:max-w-7xl mx-auto">
@@ -24,8 +27,8 @@
 	<div class="flex-1">
 		<a href="/">
 			<div class="flex flex-col">
-				<h1 class="font-medium text-base md:text-xl">Phone Waiyam Hein</h1>
-				<h2 class="font-light text-sm md:text-base">Developer / Teacher</h2>
+				<h1 class="font-medium text-base md:text-xl">{$authorStore.name}</h1>
+				<h2 class="font-light text-sm md:text-base">{$authorStore.jobTitle}</h2>
 			</div>
 		</a>
 	</div>

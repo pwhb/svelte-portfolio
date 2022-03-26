@@ -8,7 +8,7 @@
 	<div class="flex flex-row flex-wrap gap-6">
 		{#each $socialsStore as social}
 			<a href={social.url} class="flex flex-col w-12 items-center justify-center hover:opacity-70">
-				<img src={social.icon} alt={social.name} class="w-12 h-12 mb-1" />
+				<img src={social.icon} alt={social.name} class="w-8 h-8 mb-1" />
 				<p class="text-2xs font-light">
 					{social.name}
 				</p>

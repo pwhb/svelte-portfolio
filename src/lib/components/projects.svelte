@@ -7,7 +7,7 @@
 <div class="max-w-6xl mx-auto my-10">
 	<h3 class="text-xl font-medium mb-6">Projects</h3>
 	{#each $projectsStore as project}
-		<div class="card shadow-xl py-4 px-8 mb-6">
+		<div class="card shadow-xl py-4 md:px-8 mb-6">
 			<div class="flex flex-row items-center gap-5">
 				<div class="avatar">
 					<div class="w-24 mask mask-squircle shadow-md">

@@ -19,7 +19,7 @@
 		{/each}
 	</div>
 </div> -->
-<div class="mockup-window border bg-slate-300 m-6 shadow-lg">
+<div class="mockup-window border bg-slate-300 m-1 md:m-6 shadow-lg">
 	<div class="carousel">
 		{#each images as image, idx}
 			<div id={`${name}-${idx}`} class="carousel-item relative w-full">
