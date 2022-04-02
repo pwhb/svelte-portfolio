@@ -7,7 +7,11 @@
 	<h3 class="text-xl font-medium mb-6">Contact</h3>
 	<div class="flex flex-row flex-wrap gap-6">
 		{#each $socialsStore as social}
-			<a href={social.url} class="flex flex-col w-12 items-center justify-center hover:opacity-70">
+			<a
+				href={social.url}
+				target="_blank"
+				class="flex flex-col w-12 items-center justify-center hover:opacity-70"
+			>
 				<img src={social.icon} alt={social.name} class="w-8 h-8 mb-1" />
 				<p class="text-2xs font-light">
 					{social.name}
