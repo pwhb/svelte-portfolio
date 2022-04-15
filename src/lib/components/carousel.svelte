@@ -1,6 +1,7 @@
 <script>
 	export let images = [];
 	export let name;
+	export let mockup = '';
 	const end = images.length - 1;
 </script>
 
@@ -19,7 +20,7 @@
 		{/each}
 	</div>
 </div> -->
-<div class="mockup-window border bg-slate-300 m-1 md:m-6 shadow-lg">
+<div class={`mockup-${mockup} border bg-slate-300 m-1 md:m-3 shadow-lg`}>
 	<div class="carousel">
 		{#each images as image, idx}
 			<div id={`${name}-${idx}`} class="carousel-item relative w-full">

@@ -59,11 +59,18 @@ query completeQuery($type: String = "", $id: ID = "cl0xggunb0l7u0dphx8cx1e57") {
     name
     slug
     start
+    platforms {
+      icon
+      name
+    }
+    gitRepo
+    demoUrl
     teches {
       icon
       name
       url
     }
+    mockup
   }
 }
 `
