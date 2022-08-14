@@ -1,11 +1,11 @@
 <script context="module">
 	import { client } from '$lib/gql/gql_client';
 	import {
-		authorsQuery,
-		interestsQuery,
-		socialsQuery,
-		stacksQuery,
-		experiencesQuery,
+		// authorsQuery,
+		// interestsQuery,
+		// socialsQuery,
+		// stacksQuery,
+		// experiencesQuery,
 		completeQuery
 	} from '$lib/gql/gql_queries';
 	export async function load() {
@@ -45,6 +45,7 @@
 		volunteersStore
 	} from '$lib/store';
 	import Footer from '$lib/components/footer.svelte';
+import sortBy from '$lib/helpers/sortBy';
 	export let author;
 	export let socials;
 	export let stacks;
@@ -52,6 +53,13 @@
 	export let experiences;
 	export let volunteerExperiences;
 	export let projects;
+
+
+	// // experiences = sortBy(experiences, "start")
+	// volunteerExperiences = sortBy(volunteerExperiences, "start")
+	// projects = sortBy(projects, "start")
+	// console.log(stacks)
+	// stacks = sortBy(stacks, "orderId")
 	stacksStore.set(stacks);
 	interestsStore.set(interests);
 	authorStore.set(author);

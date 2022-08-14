@@ -10,7 +10,7 @@ query completeQuery($type: String = "", $id: ID = "cl0xggunb0l7u0dphx8cx1e57") {
     about
     bio
   },
-  stacks {
+  stacks(orderBy: orderId_ASC) {
     name
     teches {
       icon
@@ -27,7 +27,7 @@ query completeQuery($type: String = "", $id: ID = "cl0xggunb0l7u0dphx8cx1e57") {
     name
     url
   },
-  experiences(where: {author: {type: $type}}) {
+  experiences(orderBy: start_DESC, where: {author: {type: $type}}) {
     companyName
     description
     end
@@ -39,7 +39,7 @@ query completeQuery($type: String = "", $id: ID = "cl0xggunb0l7u0dphx8cx1e57") {
       name
     }
   },
-  volunteerExperiences(where: {author: {type: $type}}) {
+  volunteerExperiences(orderBy: start_DESC, where: {author: {type: $type}}) {
     name
     position
     end
@@ -51,7 +51,7 @@ query completeQuery($type: String = "", $id: ID = "cl0xggunb0l7u0dphx8cx1e57") {
       name
     }
   },
- projects {
+ projects(orderBy: start_DESC) {
     description
     end
     icon
@@ -75,22 +75,7 @@ query completeQuery($type: String = "", $id: ID = "cl0xggunb0l7u0dphx8cx1e57") {
 }
 `
 
-// export const createTech = gql`
-// mutation MyMutation($icon: String!, $name: String!, $url: String!) {
-//   createTech(data: {icon: $icon, name: $name, url: $url}) {
-//     id
-//   }
-// }
-// `
 
-// export const createSocial = gql`
-// mutation createSocial($name: String = "", $url: String = "", $icon: String = "") {
-//   createSocial(data: {name: $name, url: $url, icon: $icon}) {
-//     id
-//     name
-//   }
-// }
-// `
 
 export const authorsQuery = gql`
 query getAuthors {
