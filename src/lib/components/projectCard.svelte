@@ -40,7 +40,7 @@
 	<div class="text-center mb-4">
 		<p class="text-sm font-medium">Source Code</p>
 		<a href={project.gitRepo} target="_blank">
-			<img src="https://www.svgrepo.com/show/341847/github.svg" alt="github" class="mx-auto my-2" />
+			<img src="https://www.svgrepo.com/show/341847/github.svg" alt="github" class="mx-auto w-10 my-2" />
 		</a>
 		<p class="text-sm font-medium">Demo URL</p>
 		{#if project.demoUrl}
