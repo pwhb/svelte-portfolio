@@ -1,5 +1,11 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
+	safelist: [
+		'font-bold',
+		'font-mono',
+		'md:text-5xl',
+		'text-xl'
+	],
 	theme: {
 		extend: {}
 	},
