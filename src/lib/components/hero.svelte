@@ -11,9 +11,8 @@
 	<div class="hero-overlay bg-opacity-70" />
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-xl">
-			<h1 class="mb-5 text-xl md:text-5xl font-bold font-mono">&lt hello friend / &gt</h1>
 			<p class="mb-5 text-md md:text-xl">
-				{$authorStore.about}
+				{@html $authorStore.about}
 			</p>
 			<div class="mt-20">
 				<a href="/about" class="btn btn-ghost">About</a>
